@@ -1,0 +1,61 @@
+.wrapper {
+  background-color: #ffffff;
+  color: #568d90;
+  width: 360px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+button {
+  background-color: #568d90;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  margin-top: 20px;
+  font-size: large;
+  padding: 5px 20px;
+  color: #ffffff;
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: #47787a;
+}
+.submit:active {
+  cursor: pointer;
+  background-color: #36585a;
+}
+.submit:disabled {
+  background-color: #ababab;
+}
+.cancel {
+  background-color: #b14b4b;
+}
+input {
+  margin: 10px;
+  font-size: large;
+  padding: 5px 20px;
+  border: 1px #568d90 solid;
+  color: #000000;
+  border-radius: 5px;
+}
+select {
+  margin: 10px;
+  font-size: large;
+  padding: 5px 20px;
+  border: 1px #568d90 solid;
+  color: #000000;
+  border-radius: 5px;
+  width: 263px;
+}
+.pair {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p {
+}
+.error {
+  margin-left: 10px;
+}
+h2 {
+  margin-bottom: 10px;
+}

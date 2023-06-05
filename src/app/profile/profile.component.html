@@ -1,0 +1,29 @@
+<div *ngIf="loading" class="loadingWrapper">
+  <h2>{{ "loading" | translate }}</h2>
+  <img class="loadingSpinner" src="assets/images/loading.gif" alt="" />
+</div>
+<div *ngIf="user !== null" class="wrapper">
+  <h2>{{ "profile" | translate }}</h2>
+  <div class="pair">
+    <p>{{ "email" | translate }}:</p>
+    <p>{{ user.email }}</p>
+  </div>
+  <div class="pair">
+    <p>{{ "name" | translate }}:</p>
+    <p>{{ user.name }}</p>
+  </div>
+  <div class="pair">
+    <p>{{ "surname" | translate }}:</p>
+    <p>{{ user.surname }}</p>
+  </div>
+  <div class="pair">
+    <p>{{ "city" | translate }}:</p>
+    <p>{{ user.city }}</p>
+  </div>
+  <button routerLink="/mybooks">
+    {{ "back" | translate }}
+  </button>
+  <button routerLink="/profile-edit">
+    {{ "edit" | translate }}
+  </button>
+</div>

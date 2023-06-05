@@ -1,0 +1,18 @@
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    padding: 5px 15px;
+    color: white;
+    border: none;
+}
+.cancel{
+    background-color: #c9665f;
+}
+.confirm{
+    background-color: #568d90;
+}
+p{
+    margin-left: 29px;
+}

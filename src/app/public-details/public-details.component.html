@@ -1,0 +1,39 @@
+<div *ngIf="loading" class="loadingWrapper">
+  <h2>{{ "loading" | translate }}</h2>
+  <img class="loadingSpinner" src="assets/images/loading.gif" alt="" />
+</div>
+<div *ngIf="book !== null" class="wrapper">
+  <div class="flexbox">
+    <img
+      class="bookImg"
+      *ngIf="book.imageUrl !== ''"
+      src="{{ book.imageUrl }}"
+      alt=""
+    />
+    <div class="textBlock">
+      <p class="title">{{ book.title }}</p>
+      <div class="pair">
+        <p>{{ "author" | translate }}:</p>
+        <p class="value">{{ book.author }}</p>
+      </div>
+      <div class="pair">
+        <p>{{ "type" | translate }}:</p>
+        <p class="value">{{ book.type }}</p>
+      </div>
+      <div class="pair">
+        <p>{{ "price" | translate }}:</p>
+        <p class="value">{{ book.price }}₾</p>
+      </div>
+      <div class="pair">
+        <p>{{ "address" | translate }}:</p>
+        <p class="value">{{ book.address }}</p>
+      </div>
+      <div class="pair">
+        <p>{{ "email" | translate }}:</p>
+        <p class="value">{{ book.email }}</p>
+      </div>
+      <h3>{{ "description" | translate }}:</h3>
+      <p>{{ book.description }}</p>
+    </div>
+  </div>
+</div>

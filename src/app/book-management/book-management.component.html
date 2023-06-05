@@ -1,0 +1,35 @@
+<div *ngIf="loading" class="loadingWrapper">
+  <h2>{{ "loading" | translate }}</h2>
+  <img class="loadingSpinner" src="assets/images/loading.gif" alt="" />
+</div>
+<div class="wrapper">
+  <p class="section-title">{{ "forSale" | translate }}</p>
+  <hr />
+  <div class="section">
+    <div *ngFor="let book of bookList">
+      <div *ngIf="book.type == 'sale' && book.status === 'enabled'">
+        <app-book [book]="book"></app-book>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-title">{{ "forExchange" | translate }}</p>
+  <hr />
+  <div class="section">
+    <div *ngFor="let book of bookList">
+      <div *ngIf="book.type == 'exchange' && book.status === 'enabled'">
+        <app-book [book]="book"></app-book>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-title">{{ "forGift" | translate }}</p>
+  <hr />
+  <div class="section">
+    <div *ngFor="let book of bookList">
+      <div *ngIf="book.type == 'gift' && book.status === 'enabled'">
+        <app-book [book]="book"></app-book>
+      </div>
+    </div>
+  </div>
+</div>

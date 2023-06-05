@@ -1,0 +1,453 @@
+{
+  "cities": [
+    {
+      "name": "Tbilisi"
+    },
+    {
+      "name": "Gurjaani"
+    },
+    {
+      "name": "Signagi"
+    },
+    {
+      "name": "Tibaani"
+    },
+    {
+      "name": "Batumi"
+    },
+    {
+      "name": "Qutaisi"
+    },
+    {
+      "name": "Rustavi"
+    }
+  ],
+  "users": [
+    {
+      "email": "a@a",
+      "password": "$2a$10$X5CK0W6HVnBZnWkGOt/bQOrVXwqts79PLJsE8Lbx1JJX7pEuLg4qi",
+      "name": "a",
+      "surname": "a",
+      "city": "city 1",
+      "id": 1
+    },
+    {
+      "email": "b@b",
+      "password": "$2a$10$lU6QNV7rziGcSMk6scd5g.g9dV3d8G1oc71ri2UEM34F26ME/Ubdy",
+      "name": "b",
+      "surname": "b",
+      "city": "city 1",
+      "id": 2
+    },
+    {
+      "id": "bde3a29c-46f9-47fd-b0c5-99e9e445b010",
+      "email": "a@a",
+      "password": "$2a$10$HdNc5uXg3ukrPC4sJ/0iyOou10RqgYX/FPV5xyS9Kf5vue.l2IESi",
+      "name": "aaaaa",
+      "surname": "aaaaa",
+      "city": "city"
+    },
+    {
+      "email": "eddddd@edddd",
+      "password": "$2a$10$sApXm0Nl1IEEIGp94lOT/ux7oP39cutTZ493i2veJh74qUIfXwxTe",
+      "id": "99999999999999999999",
+      "name": "edddd",
+      "surname": "edddddd",
+      "city": "city 1"
+    },
+    {
+      "id": "b62efe97-af60-4b45-ad2d-91e6b6e6dae8",
+      "email": "11@111",
+      "password": "$2a$10$gMp51gQIJR4HSwFOc8B6Eep.W7YEAEfcPccILkx9YAtBCygPOUxme",
+      "name": "1111",
+      "surname": "111",
+      "city": "city"
+    },
+    {
+      "id": "b5490070-8289-41e0-8b2a-1a9a80e15568",
+      "email": "z@z",
+      "password": "$2a$10$M6nzBc6EAWS.exI7cPY2QONf31CeyGAF0OWq2zLtX3/ivZw14C/.W",
+      "name": "z2",
+      "surname": "z2",
+      "city": "city 2"
+    },
+    {
+      "id": "01debc83-2f8e-4d74-a3a3-96bf1f2280c4",
+      "email": "bookshop@mail.ru",
+      "password": "$2a$10$9cELnfKe9luA2jggS6NLSee3jdNoPz1wmMZ.YQRygv6LIamsAjThy",
+      "name": "Koko",
+      "surname": "company",
+      "city": "Gurjaani"
+    },
+    {
+      "email": "giga@gmail.com",
+      "password": "$2a$10$sjjZclCWR4dX0TqZwibCJ.m/itXQ6pVLD5g8/4JYtglANSIzcSSpe",
+      "id": "4e761a3b-c83a-4415-9103-d8ed2f30a119",
+      "name": "Giga",
+      "surname": "Gigaaa",
+      "city": "city"
+    },
+    {
+      "email": "p@p",
+      "password": "$2a$10$M1vTYthjPPxJ3LWIR0HM/eV9/8CnnQSbrnF10FzoIAb5OATfT71IW",
+      "id": "6e065c98-6791-4302-a298-4981aabe7371",
+      "name": "p",
+      "surname": "p",
+      "city": "[object Object]"
+    },
+    {
+      "id": "60f15d56-4d44-4311-acec-81cc07db4009",
+      "email": "e@3333",
+      "password": "$2a$10$Fw.ij6kEggjDSJDyYyoXT.QeDOXvz6Kvfm558e.cijLCKE1b0/WH2",
+      "name": "e",
+      "surname": "e",
+      "city": "Rustavi"
+    },
+    {
+      "email": "booksdfdshop@mail.ru",
+      "password": "$2a$10$.FgZoXPGxGi3KxjZ4CtrLeBCdS/gEOxIDM5GiZZZlP9DoJN5Kc/QW",
+      "id": "b66d9c31-3995-4cf0-91ab-65004350acab",
+      "name": "ddsf",
+      "surname": "sdf",
+      "city": "Gurjaani"
+    },
+    {
+      "email": "bosfhop@mail.ru",
+      "password": "$2a$10$N.qZbiTXo9J50Z4V7P/Yn.PQXsB7TDncI9WdvKj2qmeNmvjqW7JXK",
+      "id": "6e9af066-d6f9-4ca5-b2c1-36351689f0fd",
+      "name": "dsgsd",
+      "surname": "sdg",
+      "city": "Gurjaani"
+    },
+    {
+      "email": "bookadasdsdshop@mail.ru",
+      "password": "$2a$10$OFSretSTvTMgR/5itx/E3OVy8IN6g.7G2thz70ZIaIEkj9NRbH57C",
+      "id": "867e38dc-f09a-48ea-99f1-f9972752f02b",
+      "name": "sdfsa",
+      "surname": "sf",
+      "city": "Gurjaani"
+    },
+    {
+      "email": "a@a.a",
+      "password": "$2a$10$Ua12hZuuD9SVeYQXj1fANu7nS8TW7E8HH3xtVQpxLCDPlFN.L4gTC",
+      "id": "3acd4880-d13d-4d51-9733-5e05ada93ce7",
+      "name": "a",
+      "surname": "a",
+      "city": "Tbilisi"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "7 habits of highly effective people",
+      "author": "Jimm Collins",
+      "type": "sale",
+      "price": "29.90",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?",
+      "address": "Gurjaani",
+      "email": "bookshop@mail.ru",
+      "imageUrl": "https://m.media-amazon.com/images/I/71eCLS1aE6L.jpg",
+      "status": "enabled"
+    },
+    {
+      "id": "2",
+      "title": "Shakespeare-sonnets",
+      "author": "William Shakespeare",
+      "type": "sale",
+      "price": "40.00",
+      "address": "Tbilisi",
+      "email": "bookshop@mail.ru",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "99999",
+      "title": "Georgian writers",
+      "author": "A group of authors",
+      "type": "sale",
+      "price": "55.95",
+      "address": "Tbilisi",
+      "email": "bookshop@mail.ru",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "afkokgoawkgsdg iajiwajgiaw g kopaegipajeigjaiw jgisigjisjirgaijrigesrihjarihiajhaoirhjairhiajiagijgsijiagsg"
+    },
+    {
+      "id": "3",
+      "title": "Bagrations",
+      "author": "Roin Metreveli",
+      "type": "sale",
+      "price": "22",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?",
+      "address": "Gurjaani",
+      "email": "bookshop@mail.ru"
+    },
+    {
+      "id": "4",
+      "title": "Drakula",
+      "author": "Bream Stoker",
+      "type": "sale",
+      "price": "15.00",
+      "address": "Tbilisi",
+      "email": "example@gmail.com",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "5",
+      "title": "wuthering height",
+      "author": "Emily Bronte",
+      "type": "sale",
+      "price": "20.00",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?",
+      "address": "Gurjaani",
+      "email": "bookshop@mail.ru",
+      "imageUrl": "https://musicart.xboxlive.com/7/88191100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080",
+      "status": "enabled"
+    },
+    {
+      "id": "6",
+      "title": "The adventure of Tom Sawer",
+      "author": "Mark Twain",
+      "type": "sale",
+      "price": "13.00",
+      "address": "Tbilisi",
+      "email": "example@gmail.com",
+      "status": "disabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "7",
+      "title": "Glass Key",
+      "author": "Dashiell Hammett",
+      "type": "sale",
+      "price": "15.00",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?",
+      "address": "Gurjaani",
+      "email": "bookshop@mail.ru",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDExOTA3NzQ2N15BMl5BanBnXkFtZTgwMzIyODc5MTE@._V1_.jpg",
+      "status": "enabled"
+    },
+    {
+      "id": "8",
+      "title": "Goodbye, my love",
+      "author": "Raymond Chandler",
+      "type": "gift",
+      "price": "12.00",
+      "address": "Tbilisi",
+      "email": "bookshop@mail.ru",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "9",
+      "title": "The Woman in the Window",
+      "author": "AJ Finn",
+      "type": "gift",
+      "price": "10.00",
+      "address": "Tbilisi",
+      "email": "bookshop@mail.ru",
+      "status": "disabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "10",
+      "title": "The Missing Woman",
+      "author": "TOP Thriller",
+      "type": "gift",
+      "price": "9.00",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?",
+      "address": "Gurjaani",
+      "email": "bookshop@mail.ru",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1605828061l/54737068.jpg",
+      "status": "enabled"
+    },
+    {
+      "id": "11",
+      "title": "Alphabetical Murders",
+      "author": "Agatha Christie",
+      "type": "gift",
+      "price": "10.00",
+      "address": "Tbilisi",
+      "email": "example@gmail.com",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "13",
+      "title": "After the funeral",
+      "author": "Agatha Christie",
+      "type": "gift",
+      "price": "11.00",
+      "address": "Tbilisi",
+      "email": "bookshop@mail.ru",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "14",
+      "title": "Drakula",
+      "author": "თვითონ დრაკულა",
+      "type": "gift",
+      "price": "",
+      "description": "Drakula ultold Drakula ultoldDrakula ultoldDrakula ultoldDrakula ultoldDrakula ultoldDrakula ultoldDrakula ultoldDrakula ultoldDrakula ultold",
+      "address": "city 3",
+      "email": "example@gmail.com",
+      "imageUrl": "https://m.media-amazon.com/images/I/316QKUeAiUS._AC_SY780_.jpg",
+      "status": "enabled"
+    },
+    {
+      "id": "15",
+      "title": "Ugly Love",
+      "author": "Colin Hoover",
+      "type": "gift",
+      "price": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?",
+      "address": "Gurjaani",
+      "email": "bookshop@mail.ru",
+      "imageUrl": "",
+      "status": "enabled"
+    },
+    {
+      "id": "16",
+      "title": "Time and Eternity",
+      "author": "Bachana Bregvadze",
+      "type": "exchange",
+      "price": "5.00",
+      "address": "Tbilisi",
+      "email": "bookshop@mail.ru",
+      "status": "disabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "17",
+      "title": "Heaven",
+      "author": "Abdulrazak Gurna",
+      "type": "exchange",
+      "price": "30.00",
+      "address": "Tbilisi",
+      "email": "example@gmail.com",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "18",
+      "title": "cat and general",
+      "author": "Nino Kharatishvili",
+      "type": "exchange",
+      "price": "10",
+      "address": "Tbilisi",
+      "email": "bookshop@mail.ru",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "19",
+      "title": "The Mystery of the Blue Train.",
+      "author": "Agatha Christie",
+      "type": "exchange",
+      "price": "10",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?",
+      "address": "Gurjaani",
+      "email": "bookshop@mail.ru",
+      "imageUrl": "https://m.media-amazon.com/images/I/51vrE3IomcL.jpg",
+      "status": "enabled"
+    },
+    {
+      "id": "20",
+      "title": "Goodbye, my love",
+      "author": "Raymond Chandler",
+      "type": "exchange",
+      "price": "15",
+      "address": "Tbilisi",
+      "email": "bookshop@mail.ru",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "21",
+      "title": "The Mystery of the Blue Train.",
+      "author": "Agatha Christie",
+      "type": "exchange",
+      "price": "10",
+      "address": "Tbilisi",
+      "email": "example@gmail.com",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sed, vel, inventore necessitatibus quod officiis aperiam porro deserunt doloremque reprehenderit alias! Accusantium ipsum eveniet quae a placeat fugiat molestias in?"
+    },
+    {
+      "id": "159f7acc-25ea-434e-ae31-428208e70b8b",
+      "title": "Nika2",
+      "author": "Nika",
+      "type": "sale",
+      "price": "89",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "me var nika",
+      "address": "city 3",
+      "email": "example@gmail.com"
+    },
+    {
+      "id": "38db4b94-57c7-4051-b5dd-40fbd7841cd8",
+      "title": "My story",
+      "author": "NIka",
+      "type": "sale",
+      "price": "11",
+      "status": "enabled",
+      "imageUrl": "",
+      "description": "Story Story Story Story Story Story Story Story Story Story Story Story Story Story ",
+      "address": "city",
+      "email": "giga@gmail.com"
+    },
+    {
+      "id": "84c40526-16e6-4e49-b7af-c62a237e383f",
+      "title": "Me",
+      "author": "Book Title",
+      "type": "exchange",
+      "price": "33.55",
+      "description": "Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed do although blessing he juvenile in. Society or if excited forbade. Here name off yet she long sold easy whom. Differed oh cheerful procured pleasure securing suitable in. Hold rich on an he oh fine. Chapter ability shyness article welcome be do on service.\n\nEat imagine you chiefly few end ferrars compass. Be visitor females am ferrars inquiry. Latter law remark two lively thrown. Spot set they know rest its. Raptures law diverted believed jennings consider children the see. Had invited beloved carried the colonel. Occasional principles discretion it as he unpleasing boisterous. She bed sing dear now son half.",
+      "address": "Gurjaani",
+      "email": "bookshop@mail.ru",
+      "imageUrl": "https://www.mswordcoverpages.com/wp-content/uploads/2018/10/Book-cover-page-3-CRC.png",
+      "status": "disabled"
+    },
+    {
+      "id": "1746d5bf-035a-4ebe-b8c4-6bf2887e470e",
+      "title": "sdfgsd",
+      "author": "sdgfdsg",
+      "type": "sale",
+      "price": "sdgsd",
+      "description": "sdgsdgsdgsdg",
+      "address": "Tbilisi",
+      "email": "a@a.a",
+      "imageUrl": "dsg",
+      "status": "enabled"
+    },
+    {
+      "id": "5ee76f67-a6d4-4a32-8f0e-39209f578fe3",
+      "title": "sdfsdf",
+      "author": "sdf",
+      "type": "sale",
+      "price": "sdfsd",
+      "description": "sfsdfsdfsdf",
+      "address": "Tbilisi",
+      "email": "a@a.a",
+      "imageUrl": "sdfsdf",
+      "status": "enabled"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<header>
+  <div *ngIf="!userLogged()" routerLink="" class="logo">BookShop.com</div>
+  <div *ngIf="userLogged()" routerLink="mybooks" class="logo">BookShop.com</div>
+  <div class="header-btns">
+    <button *ngIf="userLogged()" routerLink="" (click)="logout()">
+      {{ "signout" | translate }}
+    </button>
+    <button *ngIf="userLogged()" routerLink="profile">
+      {{ "profile" | translate }}
+    </button>
+    <button *ngIf="!userLogged()" routerLink="/registration">
+      {{ "registration" | translate }}
+    </button>
+    <button *ngIf="!userLogged()" routerLink="/login">
+      {{ "login" | translate }}
+    </button>
+
+    <button (click)="changeLanguage('en')">EN</button>
+    <button (click)="changeLanguage('ka')">KA</button>
+  </div>
+</header>
+
+<router-outlet></router-outlet>

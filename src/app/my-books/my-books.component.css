@@ -1,0 +1,39 @@
+.wrapper {
+  width: 98%;
+  margin: auto;
+  margin-top: 20px;
+}
+.title {
+  color: #568d90;
+  margin-left: 20px;
+  display: inline;
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+button:hover {
+}
+.addBook {
+  margin: 5px;
+  margin-left: 20px;
+  background-color: #568d90;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  right: 20px;
+}
+.addBook:hover {
+  background-color: #1fabb3;
+}
+input{
+  margin: 10px;
+  font-size: large;
+  padding: 5px 20px;
+  border: 1px #568d90 solid;
+  color: #000000;
+  border-radius: 5px;
+}

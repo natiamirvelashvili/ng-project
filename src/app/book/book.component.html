@@ -1,0 +1,33 @@
+<div
+  [routerLink]="'//details/' + book.id"
+  class="book"
+  [ngClass]="{
+    enabledBook: book.status === 'enabled',
+    disabledBook: book.status === 'disabled'
+  }"
+>
+  <img *ngIf="book.imageUrl !== ''" src="{{ book.imageUrl }}" alt="" />
+  <p *ngIf="book.imageUrl === ''" class="title">{{ book.title }}</p>
+  <p *ngIf="book.imageUrl == ''" class="author">{{ book.author }}</p>
+  <button
+    [routerLink]="'/mybooks/edit/' + book.id"
+    class="editBtn"
+    *ngIf="myBook"
+  >
+    {{ "edit" | translate }}
+  </button>
+  <button
+    (click)="enableBook(); $event.stopPropagation()"
+    class="enableBtn"
+    *ngIf="myBook && book.status === 'disabled'"
+  >
+    {{ "enable" | translate }}
+  </button>
+  <button
+    (click)="disableBook(); $event.stopPropagation()"
+    class="disableBtn"
+    *ngIf="myBook && book.status === 'enabled'"
+  >
+    {{ "disable" | translate }}
+  </button>
+</div>

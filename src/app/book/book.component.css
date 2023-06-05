@@ -1,0 +1,79 @@
+.book {
+  width: 120px;
+  height: 180px;
+  margin: 20px;
+  padding: 15px;
+  position: relative;
+}
+.book:hover {
+  cursor: pointer;
+}
+.title {
+  font-weight: bolder;
+  color: white;
+  font-size: larger;
+  margin-bottom: 10px;
+}
+.author {
+  color: white;
+  font-size: small;
+}
+button {
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+button:hover {
+  background-color: #d3d3d3;
+}
+.editBtn {
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+  background-color: #ffffff;
+  color: #457679;
+  box-shadow: 0px 1px 5px 2px #00000044;
+}
+.editBtn:hover {
+  background-color: #2f5052;
+  color: #ffffff;
+}
+.enableBtn {
+  position: absolute;
+  bottom: 5px;
+  right: 2px;
+  background-color: #ffffff;
+  color: #457679;
+  box-shadow: 0px 1px 5px 2px #00000044;
+}
+.enableBtn:hover {
+  background-color: #5e989b;
+  color: #ffffff;
+}
+.disableBtn {
+  position: absolute;
+  bottom: 5px;
+  right: 2px;
+  background-color: #ffffff;
+  color: #c9665f;
+  box-shadow: 0px 1px 5px 2px #00000044;
+}
+.disableBtn:hover {
+  background-color: #cc7973;
+  color: #ffffff;
+}
+.disabledBook {
+  background-color: #c9665f;
+}
+.enabledBook {
+  background-color: #568d90;
+}
+img{
+  position: relative;
+  width: 150px;
+  height: 210px;
+  top: -15px;
+  left: -15px;
+}

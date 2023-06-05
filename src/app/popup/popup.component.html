@@ -1,0 +1,11 @@
+<div mat-dialog-content>
+  <p>{{ "areYouSure" | translate }}?</p>
+</div>
+<div class="btns" mat-dialog-actions>
+  <button class="cancel" [mat-dialog-close]="cancelMessage">
+    {{ "cancel" | translate }}
+  </button>
+  <button class="confirm" [mat-dialog-close]="confirmMessage">
+    {{ "confirm" | translate }}
+  </button>
+</div>

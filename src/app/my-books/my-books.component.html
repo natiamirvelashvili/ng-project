@@ -1,0 +1,22 @@
+<div *ngIf="loading" class="loadingWrapper">
+  <h2>{{ "loading" | translate }}</h2>
+  <img class="loadingSpinner" src="assets/images/loading.gif" alt="" />
+</div>
+<div *ngIf="user !== null" class="wrapper">
+  <h2 class="title">{{ "myBooks" | translate }}</h2>
+  <button routerLink="/mybooks/add" class="addBook">
+    {{ "addBook" | translate }}
+  </button>
+  <input
+    [formControl]="searchField"
+    placeholder="{{ 'searchBook' | translate }}"
+  />
+
+  <div class="section">
+    <div *ngFor="let book of searchResults$">
+      <div *ngIf="book.email == user.email">
+        <app-book [book]="book" [myBook]="true"></app-book>
+      </div>
+    </div>
+  </div>
+</div>

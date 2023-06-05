@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #568d90;
+    width: auto;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+}
+.logo{
+    background-color: rgba(233, 233, 233, 0);
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.header-btns{
+    display: flex;
+    justify-content: space-around;
+
+}
+button{
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+button:hover{
+    background-color: #d2d2d2;
+}
+button:active{
+    background-color: #ffc085;
+}

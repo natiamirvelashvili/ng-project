@@ -1,0 +1,90 @@
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+  <div class="wrapper">
+    <h1>{{ "registration" | translate }}</h1>
+    <input
+      type="text"
+      formControlName="email"
+      placeholder="{{ 'email' | translate }}"
+    />
+    <div class="error" *ngIf="email.touched && email.errors?.['required']">
+      {{ "thisFieldIsRequired" | translate }}
+    </div>
+    <div class="error" *ngIf="email.touched && email.errors?.['email']">
+      {{ "emailIsNotValid" | translate }}
+    </div>
+    <input
+      type="password"
+      formControlName="password"
+      placeholder="{{ 'password' | translate }}"
+    />
+    <div
+      class="error"
+      *ngIf="password.errors?.['required'] && password.touched"
+    >
+      {{ "thisFieldIsRequired" | translate }}
+    </div>
+    <div
+      class="error"
+      *ngIf="password.errors?.['minlength'] && password.touched"
+    >
+      {{ "passwordIsShort" | translate }}
+    </div>
+    <input
+      type="password"
+      formControlName="repeatPassword"
+      placeholder="{{ 'repeatPassword' | translate }}"
+    />
+    <div
+      class="error"
+      *ngIf="repeatPassword.errors?.['required'] && repeatPassword.touched"
+    >
+      {{ "thisFieldIsRequired" | translate }}
+    </div>
+    <div
+      class="error"
+      *ngIf="registrationForm.errors?.['matching'] && repeatPassword.touched"
+    >
+      {{ "passwordsDontMatch" | translate }}
+    </div>
+    <input
+      type="text"
+      formControlName="name"
+      placeholder="{{ 'name' | translate }}"
+    />
+    <div class="error" *ngIf="name.errors?.['required'] && name.touched">
+      {{ "thisFieldIsRequired" | translate }}
+    </div>
+    <input
+      type="text"
+      formControlName="surname"
+      placeholder="{{ 'surname' | translate }}"
+    />
+    <div class="error" *ngIf="surname.errors?.['required'] && surname.touched">
+      {{ "thisFieldIsRequired" | translate }}
+    </div>
+    <select formControlName="city" name="city">
+      <option value="">{{ "city" | translate }}</option>
+      <option *ngFor="let city of cities" value="{{ city.name }}">
+        {{ city.name }}
+      </option>
+    </select>
+    <div class="error" *ngIf="city.errors?.['required'] && city.touched">
+      {{ "thisFieldIsRequired" | translate }}
+    </div>
+
+    <button
+      [disabled]="!registrationForm.valid"
+      class="submit"
+      type="submit"
+      value="Submit"
+    >
+      {{ "submit" | translate }}
+    </button>
+    <p *ngIf="sent && userAdded === false" class="error">
+      {{ "ErrorWhileAddingUser" | translate }}
+    </p>
+    <p *ngIf="sent && userAdded === true" class="success">
+      {{ "successfulyRegistered" | translate }}
+    </p>
+  </div>
+</form>

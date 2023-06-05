@@ -1,0 +1,26 @@
+.wrapper {
+  background-color: #ffffff;
+  color: #568d90;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+p {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.pair {
+  display: flex;
+  margin-bottom: 10px;
+}
+button {
+  font-size: large;
+  padding: 5px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #568d90;
+  border-radius: 5px;
+  color: white;
+}
+h2 {
+  margin-bottom: 10px;
+}

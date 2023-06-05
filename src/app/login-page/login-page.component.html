@@ -1,0 +1,36 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <div class="wrapper">
+    <h1>{{ "login" | translate }}</h1>
+    <input type="text" formControlName="email" placeholder="{{'email'| translate}}" />
+    <div class="error" *ngIf="email.touched && email.errors?.['required']">
+      {{ "thisFieldIsRequired" | translate }}
+    </div>
+    <div class="error" *ngIf="email.touched && email.errors?.['email']">
+      {{ "emailIsNotValid" | translate }}
+    </div>
+
+    <input type="password" formControlName="password" placeholder="{{'password'| translate}}" />
+    <div
+      class="error"
+      *ngIf="password.touched && password.errors?.['required']"
+    >
+      {{ "thisFieldIsRequired" | translate }}
+    </div>
+
+    <button
+      [disabled]="!loginForm.valid"
+      class="submit"
+      type="submit"
+      value="Submit"
+    >
+      {{ "login" | translate }}
+    </button>
+
+    <p *ngIf="sent && loggedIn === true" class="success">
+      {{ "loggedInSuccessfully" | translate }}
+    </p>
+    <p *ngIf="sent && loggedIn === false" class="error">
+      {{ "loginError" | translate }}
+    </p>
+  </div>
+</form>

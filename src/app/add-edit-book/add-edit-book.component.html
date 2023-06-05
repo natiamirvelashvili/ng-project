@@ -1,0 +1,89 @@
+<form [formGroup]="addEditForm">
+  <div class="wrapper">
+    <div class="flex">
+      <div class="pair">
+        <p>{{ "title" | translate }}:</p>
+        <div>
+          <input
+            type="text"
+            formControlName="title"
+            placeholder="{{ 'title' | translate }}"
+          />
+          <div
+            class="error"
+            *ngIf="title.errors?.['required'] && title.touched"
+          >
+            {{ "thisFieldIsRequired" | translate }}
+          </div>
+        </div>
+      </div>
+      <div class="pair">
+        <p>{{ "author" | translate }}:</p>
+        <div>
+          <input
+            type="text"
+            formControlName="author"
+            placeholder="{{ 'author' | translate }}"
+          />
+          <div
+            class="error"
+            *ngIf="author.errors?.['required'] && author.touched"
+          >
+            {{ "thisFieldIsRequired" | translate }}
+          </div>
+        </div>
+      </div>
+      <div class="pair">
+        <p>{{ "type" | translate }}:</p>
+        <div>
+          <select formControlName="type" name="type" value="city">
+            <option value="">{{ "type" | translate }}</option>
+            <option value="sale">{{ "forSale" | translate }}</option>
+            <option value="exchange">{{ "forExchange" | translate }}</option>
+            <option value="gift">{{ "forGift" | translate }}</option>
+          </select>
+          <div class="error" *ngIf="type.errors?.['required'] && type.touched">
+            {{ "thisFieldIsRequired" | translate }}
+          </div>
+        </div>
+      </div>
+
+      <div class="pair">
+        <p>{{ "price" | translate }}:</p>
+        <input
+          type="text"
+          formControlName="price"
+          placeholder="{{ 'price' | translate }}"
+        />
+      </div>
+      <div class="pair">
+        <p>{{ "imageUrl" | translate }}:</p>
+        <input
+          type="text"
+          formControlName="imageUrl"
+          placeholder="{{ 'imageUrl' | translate }}"
+        />
+      </div>
+
+      <p class="descriptionTitle">{{ "description" | translate }}:</p>
+      <textarea
+        type="text"
+        formControlName="description"
+        placeholder="{{ 'description' | translate }}"
+      ></textarea>
+      <div
+        class="error"
+        *ngIf="description.errors?.['required'] && description.touched"
+      >
+        {{ "thisFieldIsRequired" | translate }}
+      </div>
+    </div>
+
+    <button class="cancel" routerLink="/mybooks">
+      {{ "cancel" | translate }}
+    </button>
+    <button [disabled]="!addEditForm.valid" class="submit" (click)="onSubmit()">
+      {{ "submit" | translate }}
+    </button>
+  </div>
+</form>

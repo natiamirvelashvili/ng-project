@@ -1,0 +1,94 @@
+<form [formGroup]="editForm">
+  <div class="wrapper">
+    <h2>{{ "editProfile" | translate }}</h2>
+    <div class="pair">
+      <p>{{ "email" | translate }}:</p>
+      <div class="inputBlock">
+        <input
+          type="text"
+          formControlName="email"
+          placeholder="{{ 'email' | translate }}"
+        />
+        <div class="error" *ngIf="email.touched && email.errors?.['required']">
+          {{ "thisFieldIsRequired" | translate }}
+        </div>
+        <div class="error" *ngIf="email.touched && email.errors?.['email']">
+          {{ "emailIsNotValid" | translate }}
+        </div>
+      </div>
+    </div>
+
+    <div class="pair">
+      <p>{{ "password" | translate }}:</p>
+      <div class="inputBlock">
+        <input
+          type="text"
+          formControlName="password"
+          placeholder="{{ 'newPassword' | translate }}"
+        />
+        <div
+          class="error"
+          *ngIf="password.touched && password.errors?.['required']"
+        >
+          {{ "thisFieldIsRequired" | translate }}
+        </div>
+        <div
+          class="error"
+          *ngIf="password.touched && password.errors?.['minlength']"
+        >
+          {{ "passwordIsShort" | translate }}
+        </div>
+      </div>
+    </div>
+
+    <div class="pair">
+      <p>{{ "name" | translate }}:</p>
+      <div class="inputBlock">
+        <input
+          type="text"
+          formControlName="name"
+          placeholder="{{ 'name' | translate }}"
+        />
+        <div class="error" *ngIf="name.errors?.['required'] && name.touched">
+          {{ "thisFieldIsRequired" | translate }}
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <p>{{ "surname" | translate }}:</p>
+      <div class="inputBlock">
+        <input
+          type="text"
+          formControlName="surname"
+          placeholder="{{ 'surname' | translate }}"
+        />
+        <div
+          class="error"
+          *ngIf="surname.errors?.['required'] && surname.touched"
+        >
+          {{ "thisFieldIsRequired" | translate }}
+        </div>
+      </div>
+    </div>
+    <div class="pair">
+      <p>{{ "city" | translate }}:</p>
+      <div class="inputBlock">
+        <select formControlName="city" name="city">
+          <option *ngFor="let city of cities" value="{{ city.name }}">
+            {{ city.name }}
+          </option>
+        </select>
+        <div class="error" *ngIf="city.errors?.['required'] && city.touched">
+          {{ "thisFieldIsRequired" | translate }}
+        </div>
+      </div>
+    </div>
+
+    <button class="cancel" routerLink="/profile">
+      {{ "cancel" | translate }}
+    </button>
+    <button [disabled]="!editForm.valid" class="submit" (click)="onSubmit()">
+      {{ "submit" | translate }}
+    </button>
+  </div>
+</form>
